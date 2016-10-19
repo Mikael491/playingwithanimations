@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var helloWorldLabel: UILabel!
     @IBOutlet weak var animationLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,10 @@ class ViewController: UIViewController {
             }, completion: { finished -> Void in
                 UIView.animate(withDuration: 1.0, animations: { 
                     self.nameLabel.alpha = 1.0
-                    }, completion: nil)
+                    }, completion: { finished -> Void in
+                        self.backgroundImage()
+                        self.setNeedsStatusBarAppearanceUpdate()
+                })
         })
         
     }
