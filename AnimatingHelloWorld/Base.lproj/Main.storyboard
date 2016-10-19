@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="randombg" translatesAutoresizingMaskIntoConstraints="NO" id="iC4-FA-p7S"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBU-7I-HIk">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="RpW-h2-YGH"/>
@@ -46,11 +47,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.33505809825395438" green="0.57927412635370024" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Hnj-xG-rqh" firstAttribute="trailing" secondItem="VAL-ck-Fhj" secondAttribute="trailing" id="13Q-DB-9hN"/>
+                            <constraint firstItem="iC4-FA-p7S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3fC-cW-zq8"/>
                             <constraint firstItem="VAL-ck-Fhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Y1-vZ-Ly2"/>
+                            <constraint firstAttribute="bottom" secondItem="iC4-FA-p7S" secondAttribute="bottom" id="8NS-fN-chN"/>
                             <constraint firstItem="Hnj-xG-rqh" firstAttribute="top" secondItem="VAL-ck-Fhj" secondAttribute="bottom" constant="15" id="Rw4-6I-6kE"/>
+                            <constraint firstAttribute="trailing" secondItem="iC4-FA-p7S" secondAttribute="trailing" id="d61-hn-aaS"/>
+                            <constraint firstItem="iC4-FA-p7S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ffR-sz-jv2"/>
                             <constraint firstItem="VAL-ck-Fhj" firstAttribute="top" secondItem="IBU-7I-HIk" secondAttribute="bottom" constant="54" id="nzn-we-jmF"/>
                             <constraint firstItem="IBU-7I-HIk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="oxd-9V-Jlv"/>
                             <constraint firstItem="IBU-7I-HIk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uK1-u2-CXL"/>
@@ -58,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="animationLabel" destination="VAL-ck-Fhj" id="z8n-gP-1s1"/>
+                        <outlet property="backgroundImageView" destination="iC4-FA-p7S" id="QZt-cH-rOw"/>
                         <outlet property="helloWorldLabel" destination="IBU-7I-HIk" id="9QE-9T-0mW"/>
                         <outlet property="nameLabel" destination="Hnj-xG-rqh" id="XgT-kl-q4d"/>
                     </connections>
@@ -67,4 +73,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="randombg" width="414" height="736"/>
+    </resources>
 </document>
