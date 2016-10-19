@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundImageView.alpha = 0.0
         
     }
     
@@ -51,11 +52,16 @@ class ViewController: UIViewController {
         
     }
     
-    func backgroundColor() {
+    func backgroundImage() {
         
-        UIView.animate(withDuration: 1.0, animations: { 
-            
-            }, completion: nil)
+        UIView.animate(withDuration: 1.5, animations: {
+            self.backgroundImageView.alpha = 1
+            }, completion: { finished -> Void in
+                let whiteColor = UIColor.white
+                self.helloWorldLabel.textColor = whiteColor
+                self.animationLabel.textColor = whiteColor
+                self.nameLabel.textColor = whiteColor
+        })
         
     }
 
