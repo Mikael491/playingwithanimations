@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
+    }
+    
     @IBOutlet weak var helloWorldLabel: UILabel!
     @IBOutlet weak var animationLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
