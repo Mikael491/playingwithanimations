@@ -61,6 +61,7 @@ class ViewController: UIViewController {
                 self.helloWorldLabel.textColor = whiteColor
                 self.animationLabel.textColor = whiteColor
                 self.nameLabel.textColor = whiteColor
+                //TODO: Play with UIView#transtion to get nice transition of text color
         })
         
     }
